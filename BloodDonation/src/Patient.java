@@ -75,6 +75,7 @@ public class Patient {
     }
 
     public void DisplayPatient(){
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("Name : "+getName());
         System.out.println("ID : "+getId());
         System.out.println("Age : "+getAge());
@@ -82,5 +83,13 @@ public class Patient {
         System.out.println("Address : "+getAddress());
         System.out.println("Patient Desies : "+getDesies());
         System.out.println("Phone Number : "+getPhnumber());
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    }
+
+    public void SearchPatient(String blgrp,String Address){
+
+        if(Bloodgrp==blgrp){
+
+        }
     }
 }

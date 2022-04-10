@@ -82,7 +82,9 @@ public class Donor {
     public String getPhNumber() {
         return PhNumber;
     }
+
     public void DisplayDonor(){
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("Name : "+getName());
         System.out.println("ID : "+getId());
         System.out.println("Age : "+getAge());
@@ -91,5 +93,6 @@ public class Donor {
         System.out.println("Address : "+getAddress());
         System.out.println("Medical Checkup : "+getReport());
         System.out.println("Phone Number : "+getPhNumber());
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
 }
