@@ -6,7 +6,7 @@ public class MainClass {
 
     public static void password(){
         Scanner sc=new Scanner(System.in);
-        final String passcode="ss";
+        final String passcode="hell";
 
         System.out.println("******YOU HAVE TO ENTERED PASSWORD******");
         System.out.println("# Password is given by the Authority.\n\n");
@@ -158,10 +158,21 @@ public class MainClass {
                     }
                 }
             }
+            if(press1==6){
+                System.out.println("Search Donor with Blood Group");
+                System.out.print("\nWhich Blood Group you want to search ? => ");
+                sc.nextLine();
+                String searchDonor=sc.nextLine();
+                System.out.println("----------------------");
+                System.out.println("Donors who have "+searchDonor+" Blood Group ");
+                System.out.println("...........................");
+                for(Donor d : donoral){
+                    if(Objects.equals(d.getBloodgrp(), searchDonor)){
+                        d.DisplayDonor();
+                    }
+                }
+            }
         }
-
-
         while(press1 != 0);
-
     }
 }

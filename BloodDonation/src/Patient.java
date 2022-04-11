@@ -7,6 +7,7 @@ public class Patient {
     private String Desies;
     private String Phnumber;
 
+    //Patient Constructor
     public Patient(String name, int id, int age, String bloodgrp, String address, String desies, String phnumber) {
         Name = name;
         Id = id;
@@ -16,9 +17,8 @@ public class Patient {
         Desies = desies;
         Phnumber = phnumber;
     }
-    //just for test
 
-
+    //getter setter for patient information
     public void setName(String name) {
         Name = name;
     }
@@ -26,9 +26,8 @@ public class Patient {
     public String getName() {
         return Name;
     }
-    public void setId(int id) {
-        Id = id;
-    }
+
+    public void setId(int id) {Id = id;}
 
     public int getId() {
         return Id;
@@ -86,10 +85,4 @@ public class Patient {
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
 
-    public void SearchPatient(String blgrp,String Address){
-
-        if(Bloodgrp==blgrp){
-
-        }
-    }
 }
